@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "KlBh/GkxOpR0dlbIr7md0h/dKeTFx9BlIsaZ8ayYdBQdJGLQZgYFH/kAU/EMBsP+3PUsuNn39axrftqpckBpkw==",
+  "dgSpecHash": "1uWXfguuQsq9voW0yXXwy5MlE2TP2zBn/kVQnueA3weRm+IT00MYk5/7hn2wI9neaG5XhAueZKIobWAWDd0W/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Developer\\source\\repos\\WsSecurityCore\\WsSecurityCore\\WsSecurityCore.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\CustomProject\\WsSecurityCore\\WsSecurityCore\\WsSecurityCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Developer\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+    "C:\\Users\\Developer\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
