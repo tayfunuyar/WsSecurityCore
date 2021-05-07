@@ -27,7 +27,9 @@ An example of use:
   var orderResponse = soapService.SendSOAPRequest(request);
   // Control Soap Response Result Here and Convert to your class to use XmlSerializer
 }
+// Add Your Startup 
 
+services.AddWsSoapServices();
 ```
 If you have a any question please contact me or open issue. 
 # Nuget Package 
