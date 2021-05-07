@@ -20,12 +20,13 @@ namespace WsSecurityCore.Models
         public string SoapActionName { get; set; }
         public string SoapActionUrl { get; set; }
         public string SoapUrl { get; set; }
-        public Dictionary<string, string> Parameters;
+        public Dictionary<string, object> Parameters;
         public string Method { get; set; }
         public bool GetOnlyBody { get; set; }
         public string Accept { get; set; }
         public string ContentType { get; set; }
 
+     
 
     }
 }
