@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <Authors>Tayfun Uyar</Authors>
+    <Company>Tayfun Uyar</Company>
+    <Description>WsSecurity Soap Request  Nuget  For .Net Core</Description>
+    <PackageProjectUrl>https://github.com/tayfunuyar/WsSecurityCore</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/tayfunuyar/WsSecurityCore</RepositoryUrl>
+    <PackageTags>wssecurity .net core, wshttpbinding .net core</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

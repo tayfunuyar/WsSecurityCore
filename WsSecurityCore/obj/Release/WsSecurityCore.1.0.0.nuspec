@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>WsSecurityCore</id>
+    <version>1.0.0</version>
+    <authors>Tayfun Uyar</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/tayfunuyar/WsSecurityCore</projectUrl>
+    <description>WsSecurity Soap Request  Nuget  For .Net Core</description>
+    <tags>wssecurity .net core, wshttpbinding .net core</tags>
+    <repository url="https://github.com/tayfunuyar/WsSecurityCore" />
+    <dependencies>
+      <group targetFramework="net5.0">
+        <dependency id="Microsoft.Extensions.DependencyInjection" version="5.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\CustomProject\WsSecurityCore\WsSecurityCore\bin\Release\net5.0\WsSecurityCore.dll" target="lib\net5.0\WsSecurityCore.dll" />
+  </files>
+</package>

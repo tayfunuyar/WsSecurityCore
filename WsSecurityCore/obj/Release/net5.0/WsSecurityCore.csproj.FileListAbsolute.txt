@@ -1,0 +1,11 @@
+D:\CustomProject\WsSecurityCore\WsSecurityCore\bin\Release\net5.0\WsSecurityCore.deps.json
+D:\CustomProject\WsSecurityCore\WsSecurityCore\bin\Release\net5.0\WsSecurityCore.dll
+D:\CustomProject\WsSecurityCore\WsSecurityCore\bin\Release\net5.0\ref\WsSecurityCore.dll
+D:\CustomProject\WsSecurityCore\WsSecurityCore\bin\Release\net5.0\WsSecurityCore.pdb
+D:\CustomProject\WsSecurityCore\WsSecurityCore\obj\Release\net5.0\WsSecurityCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\CustomProject\WsSecurityCore\WsSecurityCore\obj\Release\net5.0\WsSecurityCore.AssemblyInfoInputs.cache
+D:\CustomProject\WsSecurityCore\WsSecurityCore\obj\Release\net5.0\WsSecurityCore.AssemblyInfo.cs
+D:\CustomProject\WsSecurityCore\WsSecurityCore\obj\Release\net5.0\WsSecurityCore.csproj.CoreCompileInputs.cache
+D:\CustomProject\WsSecurityCore\WsSecurityCore\obj\Release\net5.0\WsSecurityCore.dll
+D:\CustomProject\WsSecurityCore\WsSecurityCore\obj\Release\net5.0\ref\WsSecurityCore.dll
+D:\CustomProject\WsSecurityCore\WsSecurityCore\obj\Release\net5.0\WsSecurityCore.pdb
