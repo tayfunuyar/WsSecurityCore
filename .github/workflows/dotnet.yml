@@ -41,10 +41,15 @@ jobs:
         run: |
           CURRENT_DATE=$(date +'%Y%m%d')
           BUILD_NUMBER=$GITHUB_RUN_NUMBER
-          VERSION="2.0.${CURRENT_DATE}.${BUILD_NUMBER}"
-          echo "Generated Version: $VERSION"
-          echo "PACKAGE_VERSION=$VERSION" >> $GITHUB_ENV
+          # Package version can be more detailed
+          PACKAGE_VERSION="2.0.${CURRENT_DATE}.${BUILD_NUMBER}"
+          # Assembly version needs to be simpler (major.minor.build.revision)
+          ASSEMBLY_VERSION="2.0.0.${BUILD_NUMBER}"
+          echo "Generated Package Version: $PACKAGE_VERSION"
+          echo "Generated Assembly Version: $ASSEMBLY_VERSION"
+          echo "PACKAGE_VERSION=$PACKAGE_VERSION" >> $GITHUB_ENV
+          echo "ASSEMBLY_VERSION=$ASSEMBLY_VERSION" >> $GITHUB_ENV
       - name: Build and Pack with version
-        run: dotnet build --configuration Release /p:Version=$PACKAGE_VERSION /p:PackageVersion=$PACKAGE_VERSION
+        run: dotnet build --configuration Release /p:Version=$PACKAGE_VERSION /p:PackageVersion=$PACKAGE_VERSION /p:AssemblyVersion=$ASSEMBLY_VERSION /p:FileVersion=$ASSEMBLY_VERSION
       - name: Publish to NuGet
         run: dotnet nuget push "**/*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
