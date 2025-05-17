@@ -36,7 +36,15 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 8.0.x
-      - name: Build and Pack
-        run: dotnet build --configuration Release
+      - name: Set package version
+        id: set-version
+        run: |
+          CURRENT_DATE=$(date +'%Y%m%d')
+          BUILD_NUMBER=$GITHUB_RUN_NUMBER
+          VERSION="2.0.${CURRENT_DATE}.${BUILD_NUMBER}"
+          echo "Generated Version: $VERSION"
+          echo "PACKAGE_VERSION=$VERSION" >> $GITHUB_ENV
+      - name: Build and Pack with version
+        run: dotnet build --configuration Release /p:Version=$PACKAGE_VERSION /p:PackageVersion=$PACKAGE_VERSION
       - name: Publish to NuGet
         run: dotnet nuget push "**/*.nupkg" --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
