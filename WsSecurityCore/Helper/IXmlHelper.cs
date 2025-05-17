@@ -5,12 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace WsSecurityCore.Helper
+namespace WsSecurityCore.Helper;
+
+public interface IXmlHelper
 {
-    public interface IXmlHelper
-    {
-        XElement RemoveAllNamespaces(XElement e);
-        string RemoveInvalidXmlChars(string text);
-        string RemoveAllNamespaces(string xmlDocument);
-    }
+    XElement RemoveAllNamespaces(XElement e);
+    string RemoveInvalidXmlChars(string text);
+    string RemoveAllNamespaces(string xmlDocument);
 }
